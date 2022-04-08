@@ -1,0 +1,15 @@
+<h2>LISTA</h2>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>TEXTO</th>
+  </tr>
+  <tr *ngFor="let item of list, index as i">
+    <td>
+      <a [routerlink]="['/list', i]">
+        {{item.id}}
+      </a>
+    </td>
+    <td>{{item.text}}</td>
+  </tr>
+</table>
